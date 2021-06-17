@@ -1,0 +1,28 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-kapt'
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation Dependencies.kotlin
+    implementation Dependencies.coroutines
+    implementation Dependencies.dagger
+    kapt Dependencies.daggerCompiler
+
+    implementation Dependencies.gson
+
+    // Testing
+    testImplementation Dependencies.junit
+    testImplementation Dependencies.mockito
+    testImplementation Dependencies.truth
+
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
+
+sourceSets {
+    main.java.srcDirs += 'src/main/java'
+    test.java.srcDirs += 'src/test/java'
+}

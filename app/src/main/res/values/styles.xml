@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="HotelTitleText">
+        <item name="android:layout_marginStart">@dimen/dimen_16</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_8</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HotelDescriptionText">
+        <item name="android:layout_marginStart">@dimen/dimen_16</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8</item>
+    </style>
+
+    <style name="HotelImage">
+        <item name="android:layout_marginTop">@dimen/dimen_16</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_16</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="HotelRecycler">
+        <item name="android:padding">@dimen/dimen_16</item>
+    </style>
+
+
+</resources>
